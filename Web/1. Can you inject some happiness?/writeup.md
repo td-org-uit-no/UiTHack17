@@ -18,7 +18,7 @@ This is vulnerable to SQL injection, meaning the login can be bypassed.
 
 Inserting `' OR 1=1; -- ` into the username field will result in the SQL query:
 
-``sql
+```sql
 SELECT * FROM Users WHERE username='' OR 1=1; -- AND password='';
 ```
 
