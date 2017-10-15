@@ -1,0 +1,12 @@
+[Unit]
+Description=UiTHack System exploit server
+After=network.target
+
+[Service]
+Type=simple
+User=system
+WorkingDirectory=/home/system
+ExecStart=/usr/bin/socat TCP-LISTEN:1337,reuseaddr,fork EXEC:"/home/system/system",stderr
+
+[Install]
+WantedBy=multi-user.target

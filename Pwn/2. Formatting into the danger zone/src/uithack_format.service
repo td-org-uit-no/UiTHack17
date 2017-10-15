@@ -1,0 +1,12 @@
+[Unit]
+Description=UiTHack Format string server
+After=network.target
+
+[Service]
+Type=simple
+User=format
+WorkingDirectory=/home/format
+ExecStart=/usr/bin/socat TCP-LISTEN:1337,reuseaddr,fork EXEC:"/home/format/format",stderr
+
+[Install]
+WantedBy=multi-user.target

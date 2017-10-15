@@ -1,0 +1,14 @@
+[Unit]
+Description=UiTHack Shellcode overflow server
+After=network.target
+
+[Service]
+Type=simple
+User=overflow
+Restart=always
+RestartSec=1
+WorkingDirectory=/home/overflow
+ExecStart=/usr/bin/socat TCP-LISTEN:1337,reuseaddr,fork EXEC:"/home/overflow/shellcode",stderr
+
+[Install]
+WantedBy=multi-user.target
