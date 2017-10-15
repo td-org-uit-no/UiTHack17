@@ -2,3 +2,4 @@
 
 ### Categories
 - [Crypto](./Crypto/)
+- [Misc](./Misc/)
