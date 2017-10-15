@@ -20,6 +20,7 @@ The resulting translation will be:
 | t | w | s | p | l | y | e | o | u | x | z | q | k | h | n | r | b | i | f | v | c | j | g | m | a | d |
 
 Which can be applied to the challenge to recreate the plaintext flag:
+
 `tr twsplyeouxzqkhnrbifvcjgmadTWSPLYEOUXZQKHNRBIFVCJGMAD a-zA-Z < challenge.txt`
 
 Yielding `UiTHack{substitution_ciphers_can_be_attacked_in_multiple_ways}`
