@@ -21,4 +21,5 @@ The known plaintext will reveal the key `BELLASO`.
 
 
 Using [dcode](http://www.dcode.fr/vigenere-cipher), the cipher text can be dercypted, yielding the flag:
-`UiTHack{polyalphabetic\_substitution\_ciphers\_can\_be\_hard}`
+
+`UiTHack{polyalphabetic_substitution_ciphers_can_be_hard}`
