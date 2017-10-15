@@ -1,0 +1,13 @@
+[Unit]
+Description=UiTHack Injection server
+After=network.target
+
+[Service]
+Type=simple
+User=nginx
+WorkingDirectory=/srv/injection
+Environment=FLASK_APP=injection.py
+ExecStart=/bin/flask run --host=0.0.0.0 --port 4242
+
+[Install]
+WantedBy=multi-user.target
